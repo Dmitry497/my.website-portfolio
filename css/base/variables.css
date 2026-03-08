@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #64ffda;
+    --primary-dark: #0a192f;
+    --secondary-dark: #112240;
+    --text-light: #ccd6f6;
+    --text-dark: #8892b0;
+    --white: #ffffff;
+    --black: #000000;
+    --card-bg: #112240;
+    --card-border: rgba(100, 255, 218, 0.1);
+    --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --gray-light: #e0e0e0;
+    --gray-medium: #a0a0a0;
+    --gray-dark: #404040;
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --input-border: rgba(255, 255, 255, 0.1);
+    
+    /* Цвета для полосок прогресса */
+    --react-color: #61dafb;
+    --ts-color: #3178c6;
+    --tailwind-color: #38bdf8;
+    --vue-color: #42b883;
+    --node-color: #68a063;
+    --python-color: #3776ab;
+    --postgresql-color: #336791;
+    --c-color: #a8b9cc;
+    --git-color: #f05032;
+    --aws-color: #ff9900;
+    --graphql-color: #e10098;
+    --normalize-color: #8b8b8b;
+    
+    /* Цвет для мини-кнопок и контактных блоков */
+    --tech-bg: #1a1a1a;
+    --tech-text: #a0a0a0;
+    --tech-border: #333333;
+}

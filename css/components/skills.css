@@ -1,0 +1,176 @@
+.skills {
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+}
+
+.skills__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.skills__title {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.skills__title::after {
+    display: none;
+}
+
+.skills__description {
+    font-size: 1.2rem;
+    color: var(--gray-medium);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.skills-category {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 30px 25px;
+    border: 1px solid #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-category:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+}
+
+.skills-category__title {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: 25px;
+    text-align: left;
+    border-bottom: 2px solid var(--gray-dark);
+    padding-bottom: 10px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skill__name {
+    font-size: 1rem;
+    color: var(--gray-light);
+    font-weight: 500;
+}
+
+.skill__percent {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    font-weight: 600;
+}
+
+.skill__bar {
+    width: 100%;
+    height: 8px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill__progress {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.skill__progress--react { background-color: var(--react-color); width: 95%; }
+.skill__progress--typescript { background-color: var(--ts-color); width: 90%; }
+.skill__progress--tailwind { background-color: var(--tailwind-color); width: 88%; }
+.skill__progress--vue { background-color: var(--vue-color); width: 75%; }
+.skill__progress--node { background-color: var(--node-color); width: 90%; }
+.skill__progress--python { background-color: var(--python-color); width: 85%; }
+.skill__progress--postgresql { background-color: var(--postgresql-color); width: 80%; }
+.skill__progress--c { background-color: var(--c-color); width: 78%; }
+.skill__progress--git { background-color: var(--git-color); width: 92%; }
+.skill__progress--aws { background-color: var(--aws-color); width: 75%; }
+.skill__progress--graphql { background-color: var(--graphql-color); width: 70%; }
+.skill__progress--normalize { background-color: var(--normalize-color); width: 85%; }
+
+.skills__tech-showcase {
+    margin-top: 80px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.skills__tech-title {
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills__tech-title::after {
+    display: none;
+}
+
+.skills__tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skills__tech-item {
+    background-color: var(--tech-bg);
+    color: var(--tech-text);
+    border: 1px solid var(--tech-border);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.skills__tech-item:hover {
+    border-color: var(--primary-color);
+    color: var(--text-light);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
+    transform: none;
+}

@@ -1,0 +1,23 @@
+.section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section__container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.section__content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+}

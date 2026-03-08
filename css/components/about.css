@@ -1,0 +1,132 @@
+.about {
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+}
+
+.about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.about__title {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.about__title::after {
+    display: none;
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 60px;
+    align-items: start;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.about__left {
+    text-align: left;
+}
+
+.about__heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray-light);
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.about__heading-span {
+    color: var(--gray-medium);
+    border-bottom: 2px solid var(--gray-medium);
+    padding-bottom: 5px;
+}
+
+.about__text {
+    color: var(--gray-medium);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.about__tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--gray-light);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+}
+
+.about__tag:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.about__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 30px 25px;
+    text-align: left;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+    transform: none;
+}
+
+.about-card__icon {
+    font-size: 2.5rem;
+    color: var(--gray-medium);
+    margin-bottom: 20px;
+}
+
+.about-card__title {
+    font-size: 1.4rem;
+    color: var(--gray-light);
+    margin-bottom: 12px;
+}
+
+.about-card__text {
+    font-size: 0.95rem;
+    color: #808080;
+    line-height: 1.7;
+}
