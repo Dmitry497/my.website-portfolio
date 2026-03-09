@@ -72,12 +72,6 @@
     gap: 20px;
 }
 
-.contact-form__row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
 .contact-form__group {
     display: flex;
     flex-direction: column;
@@ -118,7 +112,6 @@
     resize: none;
 }
 
-/* Кнопка без анимации приподнимания */
 .contact-form__submit {
     background-color: var(--tech-bg);
     color: var(--tech-text);
@@ -243,4 +236,44 @@
     color: var(--primary-color);
     box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
     transform: none;
+}
+
+/* ===== Toast-уведомление ===== */
+.custom-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    max-width: 90%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 16px 24px;
+    color: var(--text-light);
+    font-size: 1rem;
+    text-align: center;
+    z-index: 9999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--card-border);
+    overflow: hidden;
+}
+
+.toast-content {
+    margin-bottom: 8px;
+}
+
+.toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: var(--primary-color);
+    width: 100%;
+    transform-origin: left;
+}
+
+@keyframes progress-animation {
+    from { transform: scaleX(1); }
+    to { transform: scaleX(0); }
 }
