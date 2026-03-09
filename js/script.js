@@ -265,6 +265,31 @@ class ParallaxEffect {
     */
 })();
 
+// ========== УВЕДОМЛЕНИЕ (TOAST) ==========
+function showToast(message, duration = 4000) {
+    // Удалить предыдущий toast, если есть
+    const existingToast = document.querySelector('.custom-toast');
+    if (existingToast) existingToast.remove();
+
+    // Создать новый
+    const toast = document.createElement('div');
+    toast.className = 'custom-toast';
+    toast.innerHTML = `
+        <div class="toast-content">${message}</div>
+        <div class="toast-progress"></div>
+    `;
+    document.body.appendChild(toast);
+
+    // Запустить анимацию прогресса
+    const progress = toast.querySelector('.toast-progress');
+    progress.style.animation = `progress-animation ${duration}ms linear forwards`;
+
+    // Удалить через duration
+    setTimeout(() => {
+        toast.remove();
+    }, duration);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('starCanvas');
     let starfield = null;
@@ -380,6 +405,32 @@ document.addEventListener('DOMContentLoaded', () => {
         ctaButton.addEventListener('click', function(e) {
             e.preventDefault();
             alert('Contact form would open here');
+        });
+    }
+
+    // ===== ОБРАБОТКА ОТПРАВКИ ФОРМЫ =====
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // отменяем стандартную отправку
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    showToast('Your message has been sent successfully!', 4000);
+                    contactForm.reset(); // очистить поля формы (опционально)
+                } else {
+                    showToast('Something went wrong. Please try again.', 4000);
+                }
+            } catch (error) {
+                showToast('Network error. Please check your connection.', 4000);
+            }
         });
     }
 });
