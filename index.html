@@ -4,23 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dmitry - Frontend Developer Portfolio</title>
-    <!-- Подключение Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Подключение CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-    <!-- Космический фон -->
     <div class="starfield">
         <canvas class="starfield__canvas" id="starCanvas"></canvas>
     </div>
 
-    <!-- Параллакс слои -->
     <div class="parallax-layer parallax-layer--1" id="parallaxLayer1"></div>
     <div class="parallax-layer parallax-layer--2" id="parallaxLayer2"></div>
     <div class="parallax-layer parallax-layer--3" id="parallaxLayer3"></div>
 
-    <!-- Хедер -->
     <header class="header" id="header">
         <div class="header__container">
             <a href="#home" class="header__logo">Dev<span class="header__logo-text">Portfolio</span> /</a>
@@ -51,7 +46,6 @@
         </div>
     </header>
 
-    <!-- Главная секция -->
     <section id="home" class="hero">
         <div class="hero__container">
             <div class="hero__content">
@@ -80,7 +74,6 @@
         <div class="hero__footer"></div>
     </section>
 
-    <!-- Секция About -->
     <section id="about" class="about">
         <div class="about__container">
             <h2 class="about__title">About Me</h2>
@@ -137,14 +130,12 @@
         </div>
     </section>
 
-    <!-- Секция Skills -->
     <section id="skills" class="skills">
         <div class="skills__container">
             <h2 class="skills__title">Skills & Technologies</h2>
             <p class="skills__description">Here are the technologies and tools I use to bring ideas to life.</p>
             
             <div class="skills__grid">
-                <!-- Блок Frontend -->
                 <div class="skills-category">
                     <h3 class="skills-category__title">Frontend</h3>
                     
@@ -189,7 +180,6 @@
                     </div>
                 </div>
                 
-                <!-- Блок Backend -->
                 <div class="skills-category">
                     <h3 class="skills-category__title">Backend</h3>
                     
@@ -234,7 +224,6 @@
                     </div>
                 </div>
                 
-                <!-- Блок Tools & Others -->
                 <div class="skills-category">
                     <h3 class="skills-category__title">Tools & Others</h3>
                     
@@ -300,35 +289,31 @@
         </div>
     </section>
 
-    <!-- Секция Projects -->
     <section id="projects" class="projects">
         <div class="projects__container">
             <h2 class="projects__title">Featured Projects</h2>
             <p class="projects__description">Here are some of my recent projects that showcase my skills and passion for web development.</p>
             
             <div class="projects__grid">
-                <!-- Проект 1 -->
-                <div class="project-card">
+               <div class="project-card">
+                <a href="https://dmitry497.github.io/UNFORT.website.my-verstka/" target="_blank" style="text-decoration: none; color: inherit; display: block;">
                     <div class="project-card__header">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="E-Commerce Platform" class="project-card__image">
+                        <img src="img/1progect.png" alt="Интернет магазин UNFORT" class="project-card__image">
                         <div class="project-card__links">
-                            <a href="#" class="project-card__link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-card__link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Dmitry497/UNFORT.website.my-verstka" class="project-card__link" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-card__content">
-                        <h3 class="project-card__title">E-Commerce Platform</h3>
-                        <p class="project-card__description">A full-featured online store with cart, payments, and admin panel.</p>
+                        <h3 class="project-card__title">online store UNFORT</h3>
+                        <p class="project-card__description">Full copy of the unfort. online store website, adapted for all devices.</p>
                         <div class="project-card__tech">
-                            <span class="project-card__tech-item">React</span>
-                            <span class="project-card__tech-item">Node.js</span>
-                            <span class="project-card__tech-item">MongoDB</span>
-                            <span class="project-card__tech-item">Stripe</span>
+                            <span class="project-card__tech-item">HTML</span>
+                            <span class="project-card__tech-item">CSS</span>
+                            <span class="project-card__tech-item">JavaScript</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Проект 2 -->
                 <div class="project-card">
                     <div class="project-card__header">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Analytics Dashboard" class="project-card__image">
@@ -349,7 +334,6 @@
                     </div>
                 </div>
 
-                <!-- Проект 3 -->
                 <div class="project-card">
                     <div class="project-card__header">
                         <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Social Media App" class="project-card__image">
@@ -370,7 +354,6 @@
                     </div>
                 </div>
 
-                <!-- Проект 4 -->
                 <div class="project-card">
                     <div class="project-card__header">
                         <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="AI Image Generator" class="project-card__image">
@@ -391,7 +374,6 @@
                     </div>
                 </div>
 
-                <!-- Проект 5 -->
                 <div class="project-card">
                     <div class="project-card__header">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Task Management" class="project-card__image">
@@ -412,7 +394,6 @@
                     </div>
                 </div>
 
-                <!-- Проект 6 -->
                 <div class="project-card">
                     <div class="project-card__header">
                         <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Portfolio Website" class="project-card__image">
@@ -434,11 +415,9 @@
                 </div>
             </div>
 
-            <!-- Секция Team Projects -->
             <div class="projects__team">
                 <h2 class="projects__title">Team Projects</h2>
                 <div class="projects__grid">
-                    <!-- Team Project 1 -->
                     <div class="project-card">
                         <div class="project-card__header">
                             <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Hackathon Project" class="project-card__image">
@@ -459,7 +438,6 @@
                         </div>
                     </div>
 
-                    <!-- Team Project 2 -->
                     <div class="project-card">
                         <div class="project-card__header">
                             <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80" alt="Open Source" class="project-card__image">
@@ -483,7 +461,6 @@
         </div>
     </section>
 
-    <!-- Секция Contact (исправленная) -->
     <section id="contact" class="contact">
         <div class="contact__container">
             <h2 class="contact__title">Get In Touch</h2>
@@ -495,10 +472,8 @@
                     <form class="contact-form" id="contactForm" action="https://formsubmit.co/dmitry.website47@gmail.com" method="POST">
                         <input type="hidden" name="_subject" value="Новое сообщение с портфолио">
                         <input type="hidden" name="_captcha" value="false">
-                        <!-- Поле _next удалено -->
                         <input type="hidden" name="_template" value="table">
                         
-                        <!-- Только First Name (Last Name удалено) -->
                         <div class="contact-form__group">
                             <label for="firstName" class="contact-form__label">First Name</label>
                             <input type="text" id="firstName" name="first_name" placeholder="Your first name" class="contact-form__input" required>
@@ -568,7 +543,6 @@
         </div>
     </section>
 
-    <!-- Подключение JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
