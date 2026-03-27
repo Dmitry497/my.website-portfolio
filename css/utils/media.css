@@ -4,7 +4,7 @@
     .skills__grid { grid-template-columns: repeat(2, 1fr); }
     .projects__grid { grid-template-columns: repeat(2, 1fr); }
 }
-
+ 
 @media (max-width: 768px) {
     .header { height: 70px; }
     .header__container { padding: 0 20px; }
