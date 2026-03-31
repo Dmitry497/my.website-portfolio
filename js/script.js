@@ -53,7 +53,7 @@ class Starfield {
         
         for (let star of this.stars) {
             const twinkle = Math.sin(time * star.twinkleSpeed + star.twinklePhase) * 0.3 + 0.7;
-            
+             
             let fadeEffect = 1;
             if (star.fadeEnabled) {
                 fadeEffect = Math.sin(time * star.fadeSpeed + star.fadePhase) * star.fadeAmplitude + (1 - star.fadeAmplitude);
