@@ -42,7 +42,7 @@ class Starfield {
             });
         }
     }
-    
+     
     animate() {
         if (!this.isActive) return;
         
