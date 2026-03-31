@@ -10,7 +10,7 @@ class Starfield {
         this.animate();
         window.addEventListener('resize', () => this.resize());
     }
-    
+
     init() {
         this.resize();
         this.createStars();
