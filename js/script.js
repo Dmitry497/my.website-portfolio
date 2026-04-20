@@ -15,7 +15,7 @@ class Starfield {
         this.resize();
         this.createStars();
     }
-     
+      
     resize() {
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
