@@ -6,21 +6,25 @@
     <title>Dmitry - Frontend Developer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-</head>  
-<body class="page"> 
-    <div class="starfield">    
+</head>
+<body class="page">
+    <div class="starfield">
         <canvas class="starfield__canvas" id="starCanvas"></canvas>
-    </div> 
+    </div>
+
     <div class="parallax-layer parallax-layer--1" id="parallaxLayer1"></div>
     <div class="parallax-layer parallax-layer--2" id="parallaxLayer2"></div>
     <div class="parallax-layer parallax-layer--3" id="parallaxLayer3"></div>
+
     <header class="header" id="header">
         <div class="header__container">
             <a href="#home" class="header__logo">Dev<span class="header__logo-text">Portfolio</span> /</a>
+            
             <nav class="nav">
-                <button class="nav__toggle" id="menuToggle"> 
+                <button class="nav__toggle" id="menuToggle">
                     <i class="fas fa-bars"></i>
                 </button>
+                
                 <ul class="nav__list" id="navList">
                     <li class="nav__item">
                         <a href="#home" class="nav__link nav__link--active">Home</a>
@@ -41,6 +45,7 @@
             </nav>
         </div>
     </header>
+
     <section id="home" class="hero">
         <div class="hero__container">
             <div class="hero__content">
@@ -48,6 +53,7 @@
                 <div class="hero__title">DMITRY</div>
                 <p class="hero__description">Frontend Developer & UI/UX Designer with passion for creating beautiful and functional web experiences.</p>
                 <p class="hero__text">I specialize in building exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Let's build something amazing together.</p>
+                
                 <div class="hero__button-container">
                     <a href="#contact" class="button">Get In Touch</a>
                     <div class="hero__socials">
@@ -89,6 +95,7 @@
                         <span class="about__tag">Detail Oriented</span>
                     </div>
                 </div>
+                
                 <div class="about__right">
                     <div class="about-card">
                         <div class="about-card__icon">
@@ -289,20 +296,22 @@
             
             <div class="projects__grid">
                <div class="project-card">
-                <a href="https://dmitry497.github.io/UNFORT.website.my-verstka/" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                <a href="https://dmitry497.github.io/Unfort.shop/" target="_blank" style="text-decoration: none; color: inherit; display: block;">
                     <div class="project-card__header">
                         <img src="img/1progect.png" alt="Интернет магазин UNFORT" class="project-card__image">
                         <div class="project-card__links">
-                            <a href="https://github.com/Dmitry497/UNFORT.website.my-verstka" class="project-card__link" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Dmitry497/Unfort.shop.git" class="project-card__link" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-card__content">
-                        <h3 class="project-card__title">online store UNFORT</h3>
-                        <p class="project-card__description">Full copy of the unfort. online store website, adapted for all devices.</p>
+                        <h3 class="project-card__title">Интернет магазин UNFORT</h3>
+                        <p class="project-card__description">Полная копия сайта: со всеми товарами,со всеми модальными окнами, платежной системой</p>
                         <div class="project-card__tech">
                             <span class="project-card__tech-item">HTML</span>
                             <span class="project-card__tech-item">CSS</span>
                             <span class="project-card__tech-item">JavaScript</span>
+                            <span class="project-card__tech-item">TypeScript</span>
+                            <span class="project-card__tech-item">JSON</span>
                         </div>
                     </div>
                 </div>
@@ -506,8 +515,15 @@
                             </div>
                         </div>
                         
-                   
-                       
+                        <div class="contact-info-item">
+                            <div class="contact-info-item__icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-info-item__content">
+                                <span class="contact-info-item__label">Phone</span>
+                                <a href="tel:+79105715113" class="contact-info-item__value">+7 910 571 51 13</a>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="contact__social">
